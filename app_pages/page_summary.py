@@ -14,6 +14,8 @@ def page_summary_body():
     """,
     unsafe_allow_html=True)
 
+    st.write("\n")
+
     st.info(
         f"**General Information**\n\n"
         f"Cherry powdery mildew is a fungal disease caused by *Podosphaera clandestina*, affecting cherry trees primarily during warm, dry conditions. "
@@ -24,6 +26,8 @@ def page_summary_body():
         f"* A white, powdery layer appearing on the upper leaf surface, which can later progress to a yellowing or curling of the leaves.\n"
         f"* Distortion of young shoots and potential russeting on fruit, ultimately affecting yield and overall quality."
         f"\n\n")
+
+    st.write("\n")
     
     st.success(
         f"**Business Requirements**\n\n"
@@ -31,6 +35,8 @@ def page_summary_body():
         f"2. **High Model Performance:** To ensure reliability in agricultural applications, the model must achieve a target accuracy of 97% or higher.\n\n"
         f"3. **User-Friendly Dashboard for Prediction:** The solution should be integrated into a user-friendly dashboard that allows users to upload images and receive real-time predictions regarding the health status of the leaves."
         )
+
+    st.write("\n")
 
     st.markdown(
     """
@@ -42,6 +48,8 @@ def page_summary_body():
     </div>
     """,
     unsafe_allow_html=True)
+
+    st.write("\n")
 
     st.warning(
         f"**Project Dataset**\n\n"
