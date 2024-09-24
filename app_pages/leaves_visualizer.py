@@ -47,3 +47,28 @@ def leaves_visualizer_body():
 
     st.write("\n")
     
+    version = 'v1'
+
+    # Average and variability images
+    if st.checkbox("Difference between average and variability images"):
+        avg_powdery_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
+        avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+
+        st.warning(
+            f"From these images, we observe that powdery mildew-infected leaves show more white stripes in the center. "
+            f"However, the variability patterns alone do not offer a clear visual distinction between healthy and infected leaves."
+        )
+        st.image(avg_powdery_mildew, caption='Powdery Mildew - Average and Variability', use_column_width=True)
+        st.image(avg_healthy, caption='Healthy Leaf - Average and Variability', use_column_width=True)
+        st.write("---")
+
+    # Differences between average infected and healthy leaves
+    if st.checkbox("Differences between average infected and average healthy leaves"):
+        avg_diff_image = plt.imread(f"outputs/{version}/avg_diff.png")
+        
+        st.warning(
+            f"The difference between the average images of infected and healthy leaves doesn't show an obvious pattern "
+            f"that could be used to distinguish between the two categories."
+        )
+        st.image(avg_diff_image, caption='Difference between Average Images', use_column_width=True)
+    
