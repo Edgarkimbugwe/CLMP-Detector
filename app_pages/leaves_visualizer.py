@@ -71,4 +71,17 @@ def leaves_visualizer_body():
             f"that could be used to distinguish between the two categories."
         )
         st.image(avg_diff_image, caption='Difference between Average Images', use_column_width=True)
+
+    # Image Montage of validation data
+    if st.checkbox("Image Montage"):
+        st.write("To refresh the montage, click on the 'Create Montage' button.")
+        data_directory = 'inputs/cherryleaves_dataset/cherry-leaves'
+        labels = os.listdir(data_directory + '/validation')
+        label_to_display = st.selectbox(label="Select label", options=labels, index=0)
+
+        if st.button("Create Montage"):
+            image_montage(dir_path=data_directory + '/validation',
+                          label_to_display=label_to_display,
+                          nrows=8, ncols=3, figsize=(10, 25))
+        st.write("---")
     
