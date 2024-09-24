@@ -9,12 +9,12 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 from src.data_management import load_pkl_file
 
-# Function to plot the prediction probabilities for each class (Healthy, Infected) as a bar chart using Plotly
+
 def plot_predictions_probabilities(pred_proba, pred_class):
     """
-    Plot prediction probability results
+    To plot the prediction probabilities for each class 
+    (Healthy, Infected) as a bar chart using Plotly
     """
-
     prob_per_class = pd.DataFrame(
         data=[0, 0],
         index={'Healthy': 0, 'Infected': 1}.keys(),
@@ -35,13 +35,36 @@ def plot_predictions_probabilities(pred_proba, pred_class):
         width=600, height=300, template='seaborn')
     st.plotly_chart(fig)
 
-# Function to resize input images to the average dimensions used during model training, ensuring compatibility for prediction
+
 def resize_input_image(img, version):
     """
-    Reshape image to average image size
+    To resize input images to the average dimensions used during model 
+    training, ensuring compatibility for prediction
     """
     image_shape = load_pkl_file(file_path=f"outputs/{version}/image_shape.pkl")
     img_resized = img.resize((image_shape[1], image_shape[0]), Image.LANCZOS)
     my_image = np.expand_dims(img_resized, axis=0)/255
 
     return my_image
+
+
+def load_model_and_predict(my_image, version):
+    """
+    To load the trained machine learning model and predict the 
+    class and probability of a given input image
+    """
+    model = load_model(f"outputs/{version}/powdery_mildew_model.h5")
+
+    pred_proba = model.predict(my_image)[0, 0]
+
+    target_map = {v: k for k, v in {'Healthy': 0, 'Infected': 1}.items()}
+    
+    pred_class = target_map[pred_proba < 0.5]
+    if pred_class == target_map[1]:
+        pred_proba = 1 - pred_proba
+
+    st.write(
+        f"The predictive analysis indicates the sample leaf is "
+        f"**{pred_class.lower()}**")
+
+    return pred_proba, pred_class
