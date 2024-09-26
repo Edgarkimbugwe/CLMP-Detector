@@ -82,7 +82,7 @@ def leaves_visualizer_body():
         if st.button("Create Montage"):
             image_montage(dir_path=data_directory + '/validation',
                           label_to_display=label_to_display,
-                          nrows=8, ncols=3, figsize=(10, 25))
+                          nrows=6, ncols=3, figsize=(12, 27))
         st.write("---")
 
 # Image montage function
