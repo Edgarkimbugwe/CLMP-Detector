@@ -3,8 +3,15 @@ import matplotlib.pyplot as plt
 
 def project_hypothesis_body():
     st.write("---")
-    
-    st.write("### Hypothesis 1 and Validation")
+
+    st.markdown(
+        """
+        <ul style="list-style-type: square;">
+            <li style="font-size: 30px;">Hypothesis 1 and Validation</li>
+        </ul>
+        """, 
+    unsafe_allow_html=True
+    )
 
     st.success(
         f"Infected cherry leaves exhibit distinctive visual symptoms that can be identified through image analysis."
@@ -14,7 +21,20 @@ def project_hypothesis_body():
         f"starting with light-green circular lesions that evolve into a prominent white, cotton-like growth. "
         f"These visual markers are crucial for accurate classification and detection by the model."
     )
-    st.write("To see examples of infected versus healthy leaves, please refer to the Leaves Visualizer tab.")
+    
+    st.write("\n")
+
+    st.markdown(
+    """
+    <div style="text-align: center;">
+        <ul style="list-style-type: disc; padding-left: 0; display: inline-block;">
+            <li>Refer to the 'Leaves Visualizer' tab for examples of infected versus healthy leaves</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True)
+
+    st.write("\n")
 
     st.warning(
         f"The model demonstrated an ability to learn these visual differences, allowing it to generalize effectively "
@@ -23,7 +43,14 @@ def project_hypothesis_body():
 
     st.write("\n")
 
-    st.write("### Hypothesis 2 and Validation")
+    st.markdown(
+        """
+        <ul style="list-style-type: square;">
+            <li style="font-size: 30px;">Hypothesis 2 and Validation</li>
+        </ul>
+        """, 
+    unsafe_allow_html=True
+    )
 
     st.success(
         f"Utilizing image normalization techniques enhances model performance in distinguishing between classes."
@@ -39,7 +66,14 @@ def project_hypothesis_body():
 
     st.write("\n")
 
-    st.write("### Hypothesis 3 and Validation")
+    st.markdown(
+        """
+        <ul style="list-style-type: square;">
+            <li style="font-size: 30px;">Hypothesis 3 and Validation</li>
+        </ul>
+        """, 
+    unsafe_allow_html=True
+    )
 
     st.success(
         f"Incorporating augmented training data leads to improved model robustness."
