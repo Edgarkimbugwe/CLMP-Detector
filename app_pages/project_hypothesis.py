@@ -19,6 +19,8 @@ def project_hypothesis_body():
         f"to unseen data. By training on a diverse dataset, the model avoids overfitting and enhances its predictive performance."
     )
 
+    st.write("\n")
+
     st.write("### Hypothesis 2 and Validation")
 
     st.success(
@@ -32,6 +34,8 @@ def project_hypothesis_body():
         f"Through experimentation, we found that models trained with normalized images outperformed those trained on raw images, "
         f"highlighting the importance of preprocessing in machine learning workflows."
     )
+
+    st.write("\n")
 
     st.write("### Hypothesis 3 and Validation")
 
@@ -47,7 +51,11 @@ def project_hypothesis_body():
         f"that diverse training data is key to achieving higher classification accuracy."
     )
 
-    st.write(
-        f"For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/Edgarkimbugwe/CLMP-Detector/blob/main/README.md)."
-    )
+    st.write("---")
+
+    st.markdown(
+        f"<div style='text-align: center;'>"
+        f"For further details, refer to the "
+        f"<a href='https://github.com/Edgarkimbugwe/CLMP-Detector/blob/main/README.md'>Project README file</a>."
+        f"</div>",
+    unsafe_allow_html=True)
