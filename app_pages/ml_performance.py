@@ -4,6 +4,8 @@ import pandas as pd
 from matplotlib.image import imread
 
 def ml_performance_metrics():
+    st.write("---")
+    
     version = 'v1'
     
     st.info(

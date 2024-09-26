@@ -2,6 +2,8 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 def project_hypothesis_body():
+    st.write("---")
+    
     st.write("### Hypothesis 1 and Validation")
 
     st.success(
