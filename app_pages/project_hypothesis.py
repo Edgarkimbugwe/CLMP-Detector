@@ -32,3 +32,22 @@ def project_hypothesis_body():
         f"Through experimentation, we found that models trained with normalized images outperformed those trained on raw images, "
         f"highlighting the importance of preprocessing in machine learning workflows."
     )
+
+    st.write("### Hypothesis 3 and Validation")
+
+    st.success(
+        f"Incorporating augmented training data leads to improved model robustness."
+    )
+    st.info(
+        f"We hypothesize that augmenting the training dataset with transformed images (e.g., rotations, flips, and brightness adjustments) "
+        f"can enhance the model's ability to generalize to real-world conditions. This approach helps in preventing overfitting and boosts accuracy."
+    )
+    st.warning(
+        f"Model performance metrics indicated a noticeable improvement when augmentation was applied, validating our hypothesis "
+        f"that diverse training data is key to achieving higher classification accuracy."
+    )
+
+    st.write(
+        f"For additional information, please visit and **read** the "
+        f"[Project README file](https://github.com/Edgarkimbugwe/CLMP-Detector/blob/main/README.md)."
+    )
