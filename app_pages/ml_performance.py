@@ -93,12 +93,17 @@ def ml_performance_metrics():
     st.write("\n")
     
     st.write("### Generalized Performance on Test Set")
+
+    st.write("\n")
     
-    # Assuming `load_test_evaluation` returns a dictionary with 'Loss' and 'Accuracy'
-    test_evaluation = {'Loss': 0.25, 'Accuracy': 0.95}  # Example values
+    test_evaluation = {'Loss': 0.0322, 'Accuracy': 0.9917} 
     st.dataframe(pd.DataFrame(test_evaluation, index=['Metric']))
 
-    st.write(
+    st.write("---")
+
+    st.markdown(
+        f"<div style='text-align: center;'>"
         f"For further details, refer to the "
-        f"[Project README file](https://github.com/Edgarkimbugwe/CLMP-Detector/blob/main/README.md)."
-    )
+        f"<a href='https://github.com/Edgarkimbugwe/CLMP-Detector/blob/main/README.md'>Project README file</a>."
+        f"</div>",
+    unsafe_allow_html=True)
