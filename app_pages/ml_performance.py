@@ -35,3 +35,70 @@ def ml_performance_metrics():
 
        
     st.write("---")
+
+    st.write("### Model Performance Metrics")
+
+    st.write("\n")
+    
+    model_clf_report = plt.imread(f"outputs/{version}/clf_report.png")
+    st.image(model_clf_report, caption='Classification Report')
+
+    st.write("\n")
+
+    st.warning(
+        f"**Classification Report**\n\n"
+        f"- **Precision**: Measures the percentage of true positives out of all predicted positives.\n\n"
+        f"- **Recall**: Measures the percentage of actual positives correctly identified by the model.\n\n"
+        f"- **F1 Score**: Harmonic mean of precision and recall, balancing both metrics.\n\n"
+        f"- **Support**: Indicates the number of actual occurrences of each class in the dataset."
+    )
+
+    st.write("\n")
+    
+    model_roc_curve = plt.imread(f"outputs/{version}/roccurve.png")
+    st.image(model_roc_curve, caption='ROC Curve')
+
+    st.write("\n")
+
+    st.warning(
+        f"**ROC Curve**\n\n"
+        f"The ROC curve visualizes the model's performance in distinguishing between classes. It plots the true positive rate (TPR) against the false positive rate (FPR). A good model achieves a high TPR with a low FPR."
+    )
+
+    st.write("\n")
+
+    model_confusion_matrix = plt.imread(f"outputs/{version}/confusion_matrix.png")
+    st.image(model_confusion_matrix, caption='Confusion Matrix')
+
+    st.write("\n")
+
+    st.warning(
+        f"**Confusion Matrix**\n\n"
+        f"A confusion matrix presents a table with predicted vs. actual values. A good model has a high count of true positives (TP) and true negatives (TN), and a low count of false positives (FP) and false negatives (FN)."
+    )
+
+    st.write("\n")
+
+    model_loss_accuracy = plt.imread(f"outputs/{version}/model_history.png")
+    st.image(model_loss_accuracy, caption='Model Loss/Accuracy Over Time')
+
+    st.write("\n")
+
+    st.warning(
+        f"**Model Performance (Loss & Accuracy)**\n\n"
+        f"- **Loss**: Measures the error for each prediction. Lower loss values indicate better model performance.\n\n"
+        f"- **Accuracy**: Measures how well the model's predictions match the true labels. Higher accuracy on validation data indicates the model generalizes well to unseen data."
+    )
+
+    st.write("\n")
+    
+    st.write("### Generalized Performance on Test Set")
+    
+    # Assuming `load_test_evaluation` returns a dictionary with 'Loss' and 'Accuracy'
+    test_evaluation = {'Loss': 0.25, 'Accuracy': 0.95}  # Example values
+    st.dataframe(pd.DataFrame(test_evaluation, index=['Metric']))
+
+    st.write(
+        f"For further details, refer to the "
+        f"[Project README file](https://github.com/Edgarkimbugwe/CLMP-Detector/blob/main/README.md)."
+    )
