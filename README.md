@@ -36,3 +36,14 @@ Before using the images for model training, the following preprocessing steps we
 - **Resizing:** All images were resized to ensure uniform input size for the neural network.
 - **Normalization:** The pixel values were normalized to improve the model’s ability to learn patterns effectively.
 - **Augmentation:** Various data augmentation techniques such as flipping, rotating, and zooming were used to increase the robustness of the model by simulating different image perspectives.
+
+## Business Requirements
+
+On conducting an [interview with Marianne McGuineys](https://github.com/Edgarkimbugwe/CLMP-Detector/wiki/Business-understanding-interview) the head of IT and Innovation at Farmy & Foods, the primary business requirement for this project was to build a robust system for early detection of powdery mildew on cherry leaves. The system must accurately differentiate between healthy and infected leaves, enabling farmers and agriculturalists to take timely actions to protect crops. To ensure reliability in real-world applications, the model must achieve a target accuracy of at least 97%, which is critical for minimizing false positives and negatives.
+
+Additionally, the system should be integrated into a user-friendly dashboard where users, with little to no technical background, can easily upload images and receive real-time predictions. The solution must be scalable to handle other crops or plant diseases in the future, and the platform must be web-based to allow access across various devices, including mobile and desktop platforms, with minimal maintenance or technical intervention required.
+
+In otherwords the business requirements summarised are: 
+- Accurate Detection of Powdery Mildew on Cherry Leaves
+- High Model Performance
+- User-Friendly Dashboard for Prediction
