@@ -13,7 +13,7 @@
 ### Deployed version at [clmp-detector-fc49f90c032e.herokuapp.com/](https://clmp-detector-fc49f90c032e.herokuapp.com/)
 
 ## Dataset Content
-The dataset used for this project consists of images of cherry leaves, categorized into two classes: **healthy leaves** and **leaves infected by powdery mildew**. The data was collected to assist in training a machine learning model capable of detecting the presence of powdery mildew on cherry leaves by examining visual symptoms.
+The dataset used for this project consists of 4208 featured images of cherry leaves sourced from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). They are categorized into two classes: **healthy leaves** and **leaves infected by powdery mildew**. The data was collected to assist in training a machine learning model capable of detecting the presence of powdery mildew on cherry leaves by examining visual symptoms.
 
 ### Structure of the Dataset
 
