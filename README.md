@@ -23,7 +23,7 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 7. [Dashboard design](#dashboard-design-streamlit-app-user-interface)
 8. [Unfixed Bugs](#unfixed-bugs)
 9. [Deployment](#deployment)
-
+10. [Technologies used](#technologies-used)
 
 
 
@@ -254,13 +254,34 @@ The steps needed to deploy this projects are as follows:
 
 [Back to top ⇧](#table-of-contents)
 
+## Technologies used
 
+### Main Data Analysis and Machine Learning Libraries
+- [NumPy](https://numpy.org/): Essential for numerical computing and image processing; converts images into arrays for manipulation.
+- [Pandas](https://pandas.pydata.org/): Facilitates data manipulation with DataFrames, making it easier to handle and analyze structured data.
+- [Matplotlib](https://matplotlib.org/): Enables plotting and visualization of image and tabular data, helping to analyze model performance.
+- [Seaborn](https://seaborn.pydata.org/): Enhances data visualization with attractive statistical graphics, used for confusion matrix heatmaps and scatter plots.
+- [Plotly](https://plotly.com/python/): Allows for interactive data visualization; used in the dashboard for dynamic charts.
+- [TensorFlow](https://www.tensorflow.org/versions/r2.6/api_docs/python/tf): A powerful machine learning library for building and training the model.
+- [Keras Tuner](https://keras.io/keras_tuner/): Assists in hyperparameter tuning to optimize model performance.
+- [Scikit-learn](https://scikit-learn.org/): Provides tools for calculating class weights and generating classification reports to assess model performance.
+- [PIL Image](https://pillow.readthedocs.io/en/stable/reference/Image.html): Used for various image manipulation tasks.
+- [Streamlit](https://streamlit.io/): Creation of the dashboard
 
+### Platforms
+- [Heroku](https://en.wikipedia.org/wiki/Heroku): A cloud platform that enables easy deployment and scaling of web applications, including the project dashboard.
+- [Jupiter Notebook](https://jupyter.org/): An interactive coding environment that allows for the creation of documents containing live code, equations, visualizations, and narrative text, often used for data analysis
+- [Kaggle](https://www.kaggle.com/): A platform for data science and machine learning where datasets can be found, shared, and analyzed; it also provides a collaborative environment for model development.
+- [GitHub](https://github.com/): A version control repository that hosts source code, facilitates collaboration, and tracks changes, ensuring code management and backup.
+- [Gitpod](https://www.gitpod.io/): An online IDE that provides a pre-configured development environment in the cloud, enabling seamless coding directly from a browser.
 
+### Languages
+- [Python](https://www.python.org/)
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
+[Back to top ⇧](#table-of-contents)
 
-
-
+## TESTING
 
 
 
