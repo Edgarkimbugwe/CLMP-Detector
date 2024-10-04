@@ -13,7 +13,7 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 ## Table of Contents
 1. [Dataset Content](#dataset-content)
 2. [Business Requirements](#business-requirements)
-
+3. [Hypothesis and validation](#hypothesis-and-validation)
 
 
 
@@ -56,3 +56,54 @@ In otherwords the business requirements summarised are:
 - Accurate Detection of Powdery Mildew on Cherry Leaves
 - High Model Performance
 - User-Friendly Dashboard for Prediction
+
+## Hypothesis and validation
+
+### 1. Infected cherry leaves exhibit distinctive visual symptoms that can be identified through image analysis.
+
+Cherry leaves affected by powdery mildew typically develop light-green circular lesions as an early symptom, followed by a white, cotton-like growth on the infected area. These visible signs of infection are not only distinguishable by the human eye but can also be captured and analyzed using machine learning techniques. In this context, image analysis allows us to extract key features like the texture, color distribution, and lesion patterns, enabling the model to differentiate between healthy and infected leaves.
+
+For machine learning to effectively leverage these features, it's crucial to prepare the images correctly before they are fed into the model. This involves normalizing the images, which ensures that the pixel values are standardized, allowing the model to achieve consistent results across various test scenarios. The normalization process, in turn, aids in optimal feature extraction during training, especially in transfer learning scenarios where pre-trained models may be utilized.
+
+In practical terms, this hypothesis assumes that despite variations in lighting, angles, or leaf orientation, the unique visual characteristics of infected leaves remain identifiable. Thus, the model's ability to generalize these patterns is critical for accurate predictions. By training the model on well-prepared images, it learns to focus on the general patterns of powdery mildew infection, rather than memorizing specific details from the training dataset.
+
+Incorporating visual aids like image montages, which highlight differences between healthy and infected leaves, can further help in validating this hypothesis. Average and variability images between healthy and infected leaf samples can visually illustrate the significant distinctions the model captures, reinforcing its predictive capacity.
+
+Clear difference between healthy and unhealhy leaves as seen in an image montage
+
+![montage_healthy](./assets/images/readme/healthy_leaves.png)
+![montage_unhealthy](./assets/images/readme/infected_leaves.png)
+
+A visual representation of the average and variability images for both healthy and infected cherry leaves. The average images highlight the general patterns across all samples, while the variability images emphasize the differences and inconsistencies between individual leaves, helping to identify distinguishing features of powdery mildew infection 
+
+![average_variability](./assets/images/readme/average_variability_images.png)
+
+The comparison between the average healthy and infected leaves below highlights the distinct visual differences caused by powdery mildew. These differences, such as texture and color variations, are key indicators the model uses to distinguish between healthy and infected leaves during prediction
+
+![average_healthy_average_infected](./assets/images/readme/average_healthy_average_infected.png)
+
+The model's success lies in its ability to generalize these learned patterns to new, unseen leaves' images, enabling timely and accurate detection of powdery mildew in cherry leaves, thus supporting early intervention in real-world agricultural settings.
+
+### 2. Utilizing image normalization techniques enhances model performance in distinguishing between classes.
+
+Normalization is a critical step in preparing images for machine learning, particularly in distinguishing between classes like healthy and powdery mildew-infected leaves. It involves scaling pixel values of the images to ensure consistent ranges across the dataset, typically between 0 and 1. This consistency helps stabilize the training process, reduces variance, and allows the model to focus on essential features rather than noise. By normalizing the dataset, the model generalizes better to new unseen data, improving its ability to accurately differentiate between classes, such as healthy and infected leaves.
+
+**Accuracy and Loss Over Epochs After Image Normalization**
+
+![normalization_image](./assets/images/readme/model_history.png)
+
+The accuracy and loss plots provided visually demonstrate the impact of normalization techniques on model performance. As shown in the Model Accuracy graph (left), both training and validation accuracies increase sharply at the start and stabilize after the second epoch. The validation accuracy surpasses the training accuracy at multiple points, suggesting that the model generalizes well to unseen data. This indicates that the normalization process is likely contributing to this generalization by ensuring consistency in input data, thus enhancing the model's ability to distinguish between classes like healthy and powdery mildew-infected leaves.
+
+In the Model Loss graph (right), training and validation losses decrease significantly during the first epoch, with the validation loss maintaining a consistently low value throughout training. This supports the hypothesis that normalization reduces noise and variance in the input data, allowing the model to focus on relevant features (such as the subtle visual differences between healthy and infected leaves) rather than being distracted by inconsistencies in pixel intensity or distribution.
+
+The relatively low validation loss compared to training loss also suggests that the model is not overfitting, further confirming that normalization has improved the model’s ability to generalize and differentiate between healthy and infected leaves with a high degree of accuracy.
+
+### 3. Incorporating augmented training data leads to improved model robustness.
+
+Training models with augmented data helps to increase their robustness by exposing them to a wider variety of data points. Data augmentation techniques, such as rotation, flipping, zooming, and shifting, simulate different perspectives of cherry leaves, thus allowing the model to learn features that are invariant to these changes. This approach increases the model's ability to generalize, making it more resilient to different lighting conditions, angles, and noise that the model may encounter when presented with real-world images. Augmented data helps prevent overfitting, where the model becomes too specialized in the training dataset and fails to perform well on unseen data.
+
+**NOTE: Refer to the image (Accuracy and Loss Over Epochs After Image Normalization) above.** 
+
+On reviewing the model history file, it illustrates how augmented data improves model robustness. In the Model Accuracy graph, both training and validation accuracies show stability after the initial increase, indicating good generalization to unseen data. This is due to training on augmented data, which exposes the model to diverse real-world variations like different perspectives and lighting.
+
+On the other hand, the Model Loss graph reveals low and stable validation loss, suggesting the model is not overfitting, further supporting the effectiveness of data augmentation. This approach allows the model to adapt better to variations in test data, enhancing its resilience to changes in orientation, scale, or noise. Overall, the steady performance depicted in the graphs demonstrates that incorporating augmented data significantly strengthens the model's ability to handle real-world scenarios.
