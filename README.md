@@ -14,6 +14,9 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 1. [Dataset Content](#dataset-content)
 2. [Business Requirements](#business-requirements)
 3. [Hypothesis and validation](#hypothesis-and-validation)
+4. [Rationale for the model](#the-rationale-for-the-model)
+5. [Implementation of the Business Requirements](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
+6. 
 
 
 
@@ -107,3 +110,24 @@ Training models with augmented data helps to increase their robustness by exposi
 On reviewing the model history file, it illustrates how augmented data improves model robustness. In the Model Accuracy graph, both training and validation accuracies show stability after the initial increase, indicating good generalization to unseen data. This is due to training on augmented data, which exposes the model to diverse real-world variations like different perspectives and lighting.
 
 On the other hand, the Model Loss graph reveals low and stable validation loss, suggesting the model is not overfitting, further supporting the effectiveness of data augmentation. This approach allows the model to adapt better to variations in test data, enhancing its resilience to changes in orientation, scale, or noise. Overall, the steady performance depicted in the graphs demonstrates that incorporating augmented data significantly strengthens the model's ability to handle real-world scenarios.
+
+## The rationale for the model
+
+The rationale for developing the model centers on the pressing need for accurate detection of powdery mildew in cherry leaves, a common agricultural challenge that can significantly impact crop yields. The model employs advanced image analysis techniques to identify subtle visual symptoms indicative of infection, allowing for early intervention and management. By leveraging deep learning and convolutional neural networks (CNNs), the model is designed to learn from a diverse dataset of leaf images, enabling it to generalize effectively across different conditions and variations. The ultimate goal is to provide the client a reliable tool that enhances the ability to monitor healthy and unhealthy leaves. 
+
+## The rationale to map the business requirements to the Data Visualizations and ML tasks
+
+### Business Requirement 1: Data Visualization
+- As a client, I want to visualize the model's classification performance through confusion matrices, so I can easily see how well the model distinguishes between healthy and infected leaves.
+- As a client, I want to access detailed classification reports, including precision, recall, and F1 scores, to evaluate the model's effectiveness in detecting powdery mildew.
+- As a client, I want to compare the model's predictions against actual labels through ROC curves, which will help me understand the trade-offs between true positive rates and false positive rates.
+
+### Business Requirement 2: Classification
+- As a client, I want to track the model's accuracy and loss over epochs through dynamic plots, so I can monitor its training progress and ensure it meets the target accuracy of 97% or higher.
+- As a client, I want to visualize the impact of image normalization and data augmentation techniques on the model's performance, allowing me to understand the effectiveness of these approaches.
+- As a client, I want to review performance metrics on a validation dataset to confirm the model's ability to generalize well to unseen data.
+
+### Business Requirement 3: Report
+- As a client, I want a user-friendly interface that allows me to upload images of cherry leaves and receive immediate feedback on their health status, enhancing my decision-making process.
+- As a client, I want visualizations of the dataset's distribution, including the proportions of healthy versus infected leaves, to better understand the data used for training the model.
+- As a client, I want clear instructions and contextual information alongside the visualizations, ensuring I can navigate the dashboard easily and interpret the results effectively.
