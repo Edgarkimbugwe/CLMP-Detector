@@ -19,7 +19,8 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 3. [Hypothesis and validation](#hypothesis-and-validation)
 4. [Rationale for the model](#the-rationale-for-the-model)
 5. [Implementation of the Business Requirements](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
-6. 
+6. [ML Business case](#ml-business-case)
+7. 
 
 
 
@@ -50,6 +51,8 @@ Before using the images for model training, the following preprocessing steps we
 - **Normalization:** The pixel values were normalized to improve the model’s ability to learn patterns effectively.
 - **Augmentation:** Various data augmentation techniques such as flipping, rotating, and zooming were used to increase the robustness of the model by simulating different image perspectives.
 
+[Back to top ⇧](#table-of-contents)
+
 ## Business Requirements
 
 On conducting an [interview with Marianne McGuineys](https://github.com/Edgarkimbugwe/CLMP-Detector/wiki/Business-understanding-interview) the head of IT and Innovation at Farmy & Foods, the primary business requirement for this project was to build a robust system for early detection of powdery mildew on cherry leaves. The system must accurately differentiate between healthy and infected leaves, enabling farmers and agriculturalists to take timely actions to protect crops. To ensure reliability in real-world applications, the model must achieve a target accuracy of at least 97%, which is critical for minimizing false positives and negatives.
@@ -60,6 +63,8 @@ In otherwords the business requirements summarised are:
 - Accurate Detection of Powdery Mildew on Cherry Leaves
 - High Model Performance
 - User-Friendly Dashboard for Prediction
+
+[Back to top ⇧](#table-of-contents)
 
 ## Hypothesis and validation
 
@@ -112,6 +117,8 @@ On reviewing the model history file, it illustrates how augmented data improves 
 
 On the other hand, the Model Loss graph reveals low and stable validation loss, suggesting the model is not overfitting, further supporting the effectiveness of data augmentation. This approach allows the model to adapt better to variations in test data, enhancing its resilience to changes in orientation, scale, or noise. Overall, the steady performance depicted in the graphs demonstrates that incorporating augmented data significantly strengthens the model's ability to handle real-world scenarios.
 
+[Back to top ⇧](#table-of-contents)
+
 ## The rationale for the model
 
 The rationale for developing the model centers on the pressing need for accurate detection of powdery mildew in cherry leaves, a common agricultural challenge that can significantly impact crop yields. The model employs advanced image analysis techniques to identify subtle visual symptoms indicative of infection, allowing for early intervention and management. By leveraging deep learning and convolutional neural networks (CNNs), the model is designed to learn from a diverse dataset of leaf images, enabling it to generalize effectively across different conditions and variations. The ultimate goal is to provide the client a reliable tool that enhances the ability to monitor healthy and unhealthy leaves. 
@@ -132,3 +139,33 @@ The rationale for developing the model centers on the pressing need for accurate
 - As a client, I want a user-friendly interface that allows me to upload images of cherry leaves and receive immediate feedback on their health status, enhancing my decision-making process.
 - As a client, I want visualizations of the dataset's distribution, including the proportions of healthy versus infected leaves, to better understand the data used for training the model.
 - As a client, I want clear instructions and contextual information alongside the visualizations, ensuring I can navigate the dashboard easily and interpret the results effectively.
+
+[Back to top ⇧](#table-of-contents)
+
+## ML Business Case
+
+1. **Objective:** The goal of this project is to build an ML model that predicts whether a cherry leaf is infected with powdery mildew, based on the provided image dataset. This is framed as a supervised learning problem, specifically a binary classification task where the model must determine if a leaf is "healthy" or "infected."
+
+2. **Desired Outcome:** The model aims to provide the client with a quicker and more reliable method to detect powdery mildew early through early detection and allow timely intervention.
+
+3. **Success Metrics:**
+
+    - **Accuracy:** The model must achieve a minimum accuracy of 97% on the test set.
+    _ **User Experience:** The detection results should be presented in real-time after a user uploads an image, without requiring batch processing.
+
+4. **Model Output:** The output of the model will be a binary flag indicating whether the cherry leaf is healthy or infected, along with the probability score for each prediction. This output will be easily accessible through a user-friendly dashboard, allowing users to upload leaf images and instantly receive diagnostic results.
+
+5. **Current Detection Heuristics:** Traditionally, farmers visually inspect cherry trees to detect signs of powdery mildew. This process can take up to 30 minutes per tree, and human error can lead to inaccurate diagnoses. By using image-based detection, the proposed solution improves speed, consistency, and accuracy over manual inspection.
+
+6. **Training Data:** The training data comes from a dataset of cherry leaf images uploaded to Kaggle, which includes 4,208 labeled images (healthy or infected). The dataset is crucial for training and validating the model.
+
+7. **Business Benefits:**
+
+    - **Efficiency:** The model will save farmers significant time compared to manual inspection processes.
+    - **Reliability:** The model reduces human error in detecting powdery mildew, leading to more consistent outcomes and better decision-making.
+    - **Scalability:** The solution can be scaled to analyze larger datasets, potentially expanding to other crops affected by powdery mildew or similar diseases.
+
+**To understand more about the ML Business Case, visit the [Detector's Wiki](https://github.com/Edgarkimbugwe/CLMP-Detector/wiki)**
+
+[Back to top ⇧](#table-of-contents)
+
