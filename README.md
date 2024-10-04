@@ -21,6 +21,9 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 5. [Implementation of the Business Requirements](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
 6. [ML Business case](#ml-business-case)
 7. [Dashboard design](#dashboard-design-streamlit-app-user-interface)
+8. [Unfixed Bugs](#unfixed-bugs)
+9. [Deployment](#deployment)
+
 
 
 
@@ -208,3 +211,57 @@ The **Cherry Leaf Powdery Mildew Detection Dashboard** provides users with an in
    **Addresses Business Requirement:**  
    - *High Model Performance*  
    - *Accurate Detection of Powdery Mildew on Cherry Leaves*
+
+[Back to top ⇧](#table-of-contents)
+
+## Unfixed Bugs
+* There are no unfixed bugs.
+
+## Deployment
+
+The project is coded and hosted on GitHub and deployed with [Heroku](https://www.heroku.com/).
+
+### Creating the Heroku app 
+The steps needed to deploy this projects are as follows:
+
+1. Create a `requirement.txt` file in GitHub, for Heroku to read, listing the dependencies the program needs in order to run.
+2. Set the `runtime.txt` Python version to a Heroku-20 stack currently supported version.
+3. `push` the recent changes to GitHub and go to your [Heroku account page](https://id.heroku.com/login) to create and deploy the app running the project. 
+3. Chose "CREATE NEW APP", give it a unique name, and select a geographical region. 
+4. Add  `heroku/python` buildpack from the _Settings_ tab.
+5. From the _Deploy_ tab, chose GitHub as deployment method, connect to GitHub and select the project's repository. 
+6. Select the branch you want to deploy, then click Deploy Branch.
+7. Click to "Enable Automatic Deploys " or chose to "Deploy Branch" from the _Manual Deploy_ section. 
+8. Wait for the logs to run while the dependencies are installed and the app is being built.
+9. The mock terminal is then ready and accessible from a link similar to `https://your-projects-name.herokuapp.com/`
+10. If the slug size is too large then add large files not required for the app to the `.slugignore` file.
+   
+### Forking the Repository
+
+- Below are the steps to fork the repository:
+    - Locate the [GitHub Repository](https://github.com/Edgarkimbugwe/CLMP-Detector) of this project and log into your GitHub account. 
+    - Click on the "Fork" button, on the top right of the page, just above the "Settings". 
+    - Then locate 'Create Fork' below the page and click on it. 
+    - You now have a copy of the original repository in your GitHub account.
+
+### Making a local clone
+
+- Below are the steps to clone a repository:
+    - On the page for the [repository](https://github.com/Edgarkimbugwe/CLMP-Detector), click the 'Code' button
+    - To clone the repository using HTTPS, copy the HTTPS URL provided there
+    - Open your CLI application of choice and change the current working directory to the location where you want the cloned directory to be made.
+    - Type git clone, and then paste the previously copied URL to create the clone
+
+[Back to top ⇧](#table-of-contents)
+
+
+
+
+
+
+
+
+
+
+
+[Back to top ⇧](#table-of-contents)
