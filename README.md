@@ -1,10 +1,19 @@
 <p align="center">
-<img src="./images/readme/clpm_banner.png" alt="clpm Logo">
+<img src="./assets/images/readme/clpm_banner.png" alt="clpm Logo">
 </p>
+
+## Introduction
+
+The Cherry Leaf Powdery Mildew Detector is an innovative machine learning solution project, the 5th and final Project of the Code Institute's Bootcamp in Full Stack Software Development with specialization in Predictive Analytics. The aim of the detector is to assist farmers and agricultural experts in the early detection of powdery mildew on cherry leaves. Powdery mildew is a fungal disease that can severely affect crop yield and quality, making timely intervention crucial for minimizing damage. This project utilizes Convolutional Neural Networks (CNNs) to analyze images of cherry leaves and accurately classify them as either healthy or infected.
+
+With an emphasis on achieving high accuracy (targeting at least 97%), the model is integrated into a user-friendly dashboard that allows users to upload images and receive real-time predictions. The solution aims to make advanced image classification technology accessible to users in agriculture, ensuring proactive crop management and disease control. Furthermore, the project is designed with scalability in mind, allowing future adaptations for other plant diseases or crops.
+
+![Cherry Leaf Powdery Mildew Detector 'Am I Responsive' Image](./assets/images/readme/clpm_responsive.png)
 
 ## Table of Contents
 1. [Dataset Content](#dataset-content)
 2. [Business Requirements](#business-requirements)
+
 
 
 
