@@ -20,7 +20,7 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 4. [Rationale for the model](#the-rationale-for-the-model)
 5. [Implementation of the Business Requirements](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
 6. [ML Business case](#ml-business-case)
-7. 
+7. [Dashboard design](#dashboard-design-streamlit-app-user-interface)
 
 
 
@@ -169,3 +169,42 @@ The rationale for developing the model centers on the pressing need for accurate
 
 [Back to top ⇧](#table-of-contents)
 
+## Dashboard Design (Streamlit App User Interface)
+
+You're right! Let's update the write-up to clearly map each part of the dashboard to the specific business requirements.
+
+---
+
+### Dashboard Overview
+
+The **Cherry Leaf Powdery Mildew Detection Dashboard** provides users with an intuitive interface to predict powdery mildew infections on cherry leaves using machine learning. The dashboard integrates several key features to address the business requirements, ensuring accurate detection, high model performance, and a user-friendly experience.
+
+#### Dashboard Menu:
+
+1. **Quick Project Summary**  
+   This section gives an overview of the powdery mildew disease and explains the business objectives of the project. The summary outlines the need for accurate detection and provides background on how powdery mildew affects cherry leaves, compromising yield if left untreated.  
+   **Addresses Business Requirement:**  
+   - *Accurate Detection of Powdery Mildew on Cherry Leaves*
+
+2. **Leaves Visualizer**  
+   Users can explore visual differentiations between healthy and infected leaves through various visual aids like average images, variability images, and montages. These visualizations help in understanding the distinctive symptoms of powdery mildew, such as white cotton-like growth on the leaves, making it easier to identify infected leaves.  
+   **Addresses Business Requirement:**  
+   - *Accurate Detection of Powdery Mildew on Cherry Leaves*  
+   - *High Model Performance* (by demonstrating the visual patterns that the model learns from)
+
+3. **ML Performance Metrics**  
+   This section provides a detailed analysis of the model’s performance across the dataset, showing accuracy and loss over epochs. This supports the need for high-performance models, ensuring that the system is reliable enough for real-world application.  
+   **Addresses Business Requirement:**  
+   - *High Model Performance* (Target: 97% accuracy)
+
+4. **Powdery Mildew Detector**  
+   This is the key functionality where users can upload images of cherry leaves and receive real-time predictions about whether the leaves are infected or healthy. Multiple images can be uploaded at once, and a report with the results can be downloaded, making it easy for client to monitor the health of their plants quickly and efficiently.  
+   **Addresses Business Requirement:**  
+   - *User-Friendly Dashboard for Prediction*  
+   - *Accurate Detection of Powdery Mildew on Cherry Leaves*
+
+5. **Project Hypothesis**  
+   This section explains the project's three hypotheses, focusing on how visual symptoms, image normalization, and augmented training data improve the model’s robustness and accuracy. Each hypothesis is backed by data and visual outputs, tying into the goals of accurate detection and reliable model performance.  
+   **Addresses Business Requirement:**  
+   - *High Model Performance*  
+   - *Accurate Detection of Powdery Mildew on Cherry Leaves*
