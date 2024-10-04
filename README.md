@@ -24,6 +24,7 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 8. [Unfixed Bugs](#unfixed-bugs)
 9. [Deployment](#deployment)
 10. [Technologies used](#technologies-used)
+11. [Testing](#testing)
 
 
 
@@ -283,6 +284,29 @@ The steps needed to deploy this projects are as follows:
 
 ## TESTING
 
+
+
+[Back to top ⇧](#table-of-contents)
+
+## Credits
+
+- The template used for this project belongs to CodeInstitute - [GitHub](https://github.com/Code-Institute-Submissions)
+- CI's Malaria Detection walkthrough
+- Edureka - [Cancer Detection Using Deep Learning](https://www.youtube.com/watch?v=7MceDfpnP8k&list=PL9ooVrP1hQOFx3U6DNqm-IwbWARdw2iEB&ab_channel=edureka%21)
+- Scikit-learn - [Understanding Learning Curves](https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html) 
+
+### Content
+- The leaves dataset was linked from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) and created by [Code Institute](https://www.kaggle.com/codeinstitute)
+- The following sources were used to understand powdery mildew, [Powdery Mildews – 2.902, by by S. Newman and L.P. Pottorff](https://extension.colostate.edu/topic-areas/yard-garden/powdery-mildews-2-902/#:~:text=Powdery%20mildew%20is%20one%20of,or%20tolerant%20to%20powdery%20mildew.) and [garden design](https://www.gardendesign.com/how-to/powdery-mildew.html)
+
+### Media
+- The banner was developed using Ms Word tools
+
+### Acknowledgements
+
+- Special thanks to my mentor Mo Shami, for his guidance and insightful suggestions. His expertise and guidance was key to the success of this project. 
+
+- To the members of Community-Sweden on Slack, thank you for your constant support, guidance, and advice. Your encouragement and collaboration have truly made a difference, providing the push and belief needed to keep going.
 
 
 [Back to top ⇧](#table-of-contents)
