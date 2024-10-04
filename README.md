@@ -9,6 +9,9 @@ The Cherry Leaf Powdery Mildew Detector is an innovative machine learning soluti
 With an emphasis on achieving high accuracy (targeting at least 97%), the model is integrated into a user-friendly dashboard that allows users to upload images and receive real-time predictions. The solution aims to make advanced image classification technology accessible to users in agriculture, ensuring proactive crop management and disease control. Furthermore, the project is designed with scalability in mind, allowing future adaptations for other plant diseases or crops.
 
 ![Cherry Leaf Powdery Mildew Detector 'Am I Responsive' Image](./assets/images/readme/clpm_responsive.png)
+*Figure: Cherry Leaf Powdery Mildew Detector – Responsive design preview.*
+
+### Deployed version at [clmp-detector-fc49f90c032e.herokuapp.com/](https://clmp-detector-fc49f90c032e.herokuapp.com/)
 
 ## Table of Contents
 1. [Dataset Content](#dataset-content)
@@ -21,8 +24,6 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 
 
 
-
-### Deployed version at [clmp-detector-fc49f90c032e.herokuapp.com/](https://clmp-detector-fc49f90c032e.herokuapp.com/)
 
 ## Dataset Content
 The dataset used for this project consists of 4208 featured images of cherry leaves sourced from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). They are categorized into two classes: **healthy leaves** and **leaves infected by powdery mildew**. The data was collected to assist in training a machine learning model capable of detecting the presence of powdery mildew on cherry leaves by examining visual symptoms.
