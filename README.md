@@ -285,11 +285,35 @@ The steps needed to deploy this projects are as follows:
 [Back to top ⇧](#table-of-contents)
 
 ## TESTING
+### Manual Testing
 
+#### User Story Testing
+*Business Requirement 1: Data Visualization**
 
+| User Story | Feature | Action | Expected Result | Actual Result | 
+| --- | --- | --- | --- | --- |
+| User Story 1 | Navigation bar | Selecting buttons from the side menu | Selected page displayed with correct information | Functions as expected |
+| --- | --- | --- | --- | --- |
+| User Story 2 | Visual graphs of image data | Viewing average images, differences, and variabilities between healthy and infected leaves | Graphs clearly show differences between healthy and infected leaves | Functions as expected |
+| --- | --- | --- | --- | --- |
+| User Story 3 | Image montage display | Viewing image montage of healthy and infected leaves | Montage accurately displays both healthy and infected leaf images for visual differentiation | Functions as expected |
+| User Story 4 | Confusion matrix display | Model permance to distinguish between healthy and infected leaves | Display of TP, TN and FN, FP | Functions as expected |
 
+*Business Requirement 2: Classification*
 
+| User Story | Feature | Action | Expected Result | Actual Result | 
+| --- | --- | --- | --- | --- |
+| User Story 1 | Training progress plots | Viewing accuracy and loss over epochs on ML Performance Metrics page | Dynamic plots showing model's accuracy and loss over time | Functions as expected |
+| User Story 2 | Image normalization and augmentation impact visualization | Viewing visualizations of model performance changes on ML Performance Metrics page | Performance impact of normalization and augmentation shown clearly | Functions as expected |
+| User Story 3 | Validation performance metrics | Reviewing precision, recall, and F1 scores on validation dataset in ML Performance Metrics | Metrics displayed for assessing model generalization to unseen data | Functions as expected |
 
+*Business Requirement 3: Report*
+
+| User Story | Feature | Action | Expected Result | Actual Result | 
+| --- | --- | --- | --- | --- |
+| User Story 1 | Image Upload & Feedback | Uploading cherry leaf images in Powdery Mildew Detector | Immediate prediction of leaf health status displayed | Functions as expected |
+| User Story 2 | Dataset Distribution Visualization | Viewing dataset distribution in Quick Project Summary | Proportions of healthy vs. infected leaves displayed clearly | Functions as expected |
+| User Story 3 | Contextual Information & Instructions | Reading provided instructions and context across dashboard pages | Clear instructions aiding in dashboard navigation and result interpretation | Functions as expected |
 
 
 
