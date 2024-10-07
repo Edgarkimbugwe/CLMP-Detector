@@ -9,7 +9,7 @@ from app_pages.powdery_mildew_detector import powdery_mildew_detector_body
 from app_pages.project_hypothesis import project_hypothesis_body
 
 # Create an instance of the MultiPage app with the title "CLMP Detector"
-app = MultiPage(app_name="CLMP Detector")
+app = MultiPage(app_name="CLPM Detector")
 
 # Add pages to the app, associating them with their corresponding functions
 app.add_page("Quick Project Summary", page_summary_body)
