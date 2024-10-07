@@ -25,6 +25,7 @@ With an emphasis on achieving high accuracy (targeting at least 97%), the model 
 9. [Deployment](#deployment)
 10. [Technologies used](#technologies-used)
 11. [Testing](#testing)
+12. [Credits](#credits)
 
 
 
@@ -130,9 +131,10 @@ The rationale for developing the model centers on the pressing need for accurate
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
 
 ### Business Requirement 1: Data Visualization
-- As a client, I want to visualize the model's classification performance through confusion matrices, so I can easily see how well the model distinguishes between healthy and infected leaves.
-- As a client, I want to access detailed classification reports, including precision, recall, and F1 scores, to evaluate the model's effectiveness in detecting powdery mildew.
-- As a client, I want to compare the model's predictions against actual labels through ROC curves, which will help me understand the trade-offs between true positive rates and false positive rates.
+- As a client, I want to navigate easily through an interactive dashboard so that I can access various data visualizations and understand the data.
+- As a client, I want to view side-by-side visual graphs of average images, differences, and variabilities between healthy and infected leaves, so that I can easily identify distinguishing features.
+- As a client, I want to explore an image montage of healthy and infected leaves, so that I can visually differentiate between the two classes.
+- I want the dashboard to display a confusion matrix, so I can easily see how well the model is performing in distinguishing between healthy and infected leaves.
 
 ### Business Requirement 2: Classification
 - As a client, I want to track the model's accuracy and loss over epochs through dynamic plots, so I can monitor its training progress and ensure it meets the target accuracy of 97% or higher.
@@ -283,6 +285,11 @@ The steps needed to deploy this projects are as follows:
 [Back to top ⇧](#table-of-contents)
 
 ## TESTING
+
+
+
+
+
 
 
 
