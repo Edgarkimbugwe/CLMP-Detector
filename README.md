@@ -313,7 +313,25 @@ The steps needed to deploy this projects are as follows:
 | User Story 2 | Dataset Distribution Visualization | Viewing dataset distribution in Quick Project Summary | Proportions of healthy vs. infected leaves displayed clearly | Functions as expected |
 | User Story 3 | Contextual Information & Instructions | Reading provided instructions and context across dashboard pages | Clear instructions aiding in dashboard navigation and result interpretation | Functions as expected |
 
+### Code Validation and Quality Improvements
 
+As part of the development process, several formatting and structural changes were made to ensure the code adheres to Python's PEP8 standards and is easy to maintain. These improvements include:
+
+- **Whitespace Management:** Trailing whitespace was removed, and blank lines were properly inserted to improve code cleanliness and avoid potential errors.
+
+- **Indentation Fixes:** Consistent indentation was applied, particularly in multiline strings, to enhance the readability and maintainability of the code.
+
+- **General Formatting:** The code style was unified across all modules, ensuring that it is easier to navigate and collaborate on in the future.
+
+- **Enhanced String Formatting:** Warnings and section titles were restructured to make them clearer and more readable.
+
+These changes not only improve the code’s readability but also set a solid foundation for future additions, such as the implementation of automated unit testing.
+
+In addressing the **line Length: 'line too long'** errors, it was observed that tab spaces contribute to the line length. While some lines exceed PEP8's character limit, they were intentionally left as-is to preserve readability and avoid breaking key logic across multiple lines. This decision ensures the code remains clear and easy to follow.
+
+### Automated Unit Tests
+
+* Automated unit testing was not implemented; however, it is planned for future development.
 
 [Back to top ⇧](#table-of-contents)
 
