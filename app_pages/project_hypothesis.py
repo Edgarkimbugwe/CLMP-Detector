@@ -1,6 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 
+
 def project_hypothesis_body():
     st.write("---")
 
@@ -9,8 +10,8 @@ def project_hypothesis_body():
         <ul style="list-style-type: square;">
             <li style="font-size: 30px;">Hypothesis 1 and Validation</li>
         </ul>
-        """, 
-    unsafe_allow_html=True
+        """,
+        unsafe_allow_html=True
     )
 
     st.success(
@@ -21,18 +22,18 @@ def project_hypothesis_body():
         f"starting with light-green circular lesions that evolve into a prominent white, cotton-like growth. "
         f"These visual markers are crucial for accurate classification and detection by the model."
     )
-    
+
     st.write("\n")
 
     st.markdown(
-    """
-    <div style="text-align: center;">
-        <ul style="list-style-type: disc; padding-left: 0; display: inline-block;">
-            <li>Refer to the 'Leaves Visualizer' tab for examples of infected versus healthy leaves</li>
-        </ul>
-    </div>
-    """,
-    unsafe_allow_html=True)
+        """
+        <div style="text-align: center;">
+            <ul style="list-style-type: disc; padding-left: 0; display: inline-block;">
+                <li>Refer to the 'Leaves Visualizer' tab for examples of infected versus healthy leaves</li>
+            </ul>
+        </div>
+        """,
+        unsafe_allow_html=True)
 
     st.write("\n")
 
@@ -48,8 +49,8 @@ def project_hypothesis_body():
         <ul style="list-style-type: square;">
             <li style="font-size: 30px;">Hypothesis 2 and Validation</li>
         </ul>
-        """, 
-    unsafe_allow_html=True
+        """,
+        unsafe_allow_html=True
     )
 
     st.success(
@@ -71,8 +72,8 @@ def project_hypothesis_body():
         <ul style="list-style-type: square;">
             <li style="font-size: 30px;">Hypothesis 3 and Validation</li>
         </ul>
-        """, 
-    unsafe_allow_html=True
+        """,
+        unsafe_allow_html=True
     )
 
     st.success(
@@ -94,4 +95,4 @@ def project_hypothesis_body():
         f"For further details, refer to the "
         f"<a href='https://github.com/Edgarkimbugwe/CLMP-Detector/blob/main/README.md'>Project README file</a>."
         f"</div>",
-    unsafe_allow_html=True)
+        unsafe_allow_html=True)
