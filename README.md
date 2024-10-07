@@ -224,6 +224,20 @@ When uploading an image that is not a leaf, the model sometimes classifies it as
 **Examples of the Issue:**
 
 - **Non-Leaf Images:** Images that do not contain cherry leaves are incorrectly classified as either "healthy" or "powdery_mildew."
+    
+    <details>
+    <summary>Image wrongly predicted healthy</summary>
+
+    ![Not leaf Image](./assets/images/readme/predicted_healthy.png)
+    </details>
+    <br>
+
+    <details>
+    <summary>Image wrongly predicted unhealthy</summary>
+
+    ![Not leaf Image](./assets/images/readme/predicted_unhealthy.png)
+    </details>
+    <br>
 
 - **Bright Leaves:** Leaves that appear brighter due to lighting conditions may also be misclassified, sometimes being identified as having traces of powdery mildew or as unhealthy.
 
