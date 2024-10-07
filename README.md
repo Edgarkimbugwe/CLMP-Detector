@@ -218,7 +218,26 @@ The **Cherry Leaf Powdery Mildew Detection Dashboard** provides users with an in
 [Back to top ⇧](#table-of-contents)
 
 ## Unfixed Bugs
-* There are no unfixed bugs.
+### Bug Report: Incorrect Classification of Non-Leaf Images
+When uploading an image that is not a leaf, the model sometimes classifies it as either healthy or infected with powdery mildew. This misclassification leads to misleading predictions.
+
+**Examples of the Issue:**
+
+- **Non-Leaf Images:** Images that do not contain cherry leaves are incorrectly classified as either "healthy" or "powdery_mildew."
+
+- **Bright Leaves:** Leaves that appear brighter due to lighting conditions may also be misclassified, sometimes being identified as having traces of powdery mildew or as unhealthy.
+
+**Potential Fixes:**
+
+- **Image Validation Stage:** Implement an initial validation step that checks the content of the uploaded image to ensure it is indeed a leaf. This could involve analyzing the image dimensions, colors, or patterns typical of cherry leaves before making any predictions.
+
+- **Training Data Augmentation:** Enhance the training dataset to include images of non-leaf objects and overly bright leaves to help the model learn to distinguish between actual leaves and other objects. This might involve adding negative examples to train the model to recognize non-leaf images better.
+
+- **Threshold Adjustments:** Revisit the classification thresholds to reduce false positives when determining if an image is healthy or infected. This might involve fine-tuning the model to minimize misclassifications caused by similar pixel values in non-leaf images.
+
+- **Visual Feedback:** Provide feedback to users if the uploaded image does not meet certain criteria (e.g., size, aspect ratio, color range) for being classified as a leaf. This can guide users to upload more appropriate images for analysis.
+
+*Next Steps:* Investigate the above potential fixes and implement a strategy to improve the model's accuracy in recognizing leaf images. This will be addressed in future updates.
 
 ## Deployment
 
