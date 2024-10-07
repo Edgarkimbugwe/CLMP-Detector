@@ -315,7 +315,7 @@ The steps needed to deploy this projects are as follows:
 
 ### Code Validation and Quality Improvements
 
-As part of the development process, several formatting and structural changes were made to ensure the code adheres to Python's PEP8 standards and is easy to maintain. These improvements include:
+As part of the development process, several formatting and structural changes were made to ensure the code adheres to [Python's PEP8](https://pep8ci.herokuapp.com/) standards and is easy to maintain. These improvements include:
 
 - **Whitespace Management:** Trailing whitespace was removed, and blank lines were properly inserted to improve code cleanliness and avoid potential errors.
 
