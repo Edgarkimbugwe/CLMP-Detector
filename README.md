@@ -293,9 +293,7 @@ The steps needed to deploy this projects are as follows:
 | User Story | Feature | Action | Expected Result | Actual Result | 
 | --- | --- | --- | --- | --- |
 | User Story 1 | Navigation bar | Selecting buttons from the side menu | Selected page displayed with correct information | Functions as expected |
-| --- | --- | --- | --- | --- |
 | User Story 2 | Visual graphs of image data | Viewing average images, differences, and variabilities between healthy and infected leaves | Graphs clearly show differences between healthy and infected leaves | Functions as expected |
-| --- | --- | --- | --- | --- |
 | User Story 3 | Image montage display | Viewing image montage of healthy and infected leaves | Montage accurately displays both healthy and infected leaf images for visual differentiation | Functions as expected |
 | User Story 4 | Confusion matrix display | Model permance to distinguish between healthy and infected leaves | Display of TP, TN and FN, FP | Functions as expected |
 
