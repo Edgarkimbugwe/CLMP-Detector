@@ -157,7 +157,7 @@ The rationale for developing the model centers on the pressing need for accurate
 3. **Success Metrics:**
 
     - **Accuracy:** The model must achieve a minimum accuracy of 97% on the test set.
-    _ **User Experience:** The detection results should be presented in real-time after a user uploads an image, without requiring batch processing.
+    - **User Experience:** The detection results should be presented in real-time after a user uploads an image, without requiring batch processing.
 
 4. **Model Output:** The output of the model will be a binary flag indicating whether the cherry leaf is healthy or infected, along with the probability score for each prediction. This output will be easily accessible through a user-friendly dashboard, allowing users to upload leaf images and instantly receive diagnostic results.
 
@@ -168,7 +168,9 @@ The rationale for developing the model centers on the pressing need for accurate
 7. **Business Benefits:**
 
     - **Efficiency:** The model will save farmers significant time compared to manual inspection processes.
+
     - **Reliability:** The model reduces human error in detecting powdery mildew, leading to more consistent outcomes and better decision-making.
+
     - **Scalability:** The solution can be scaled to analyze larger datasets, potentially expanding to other crops affected by powdery mildew or similar diseases.
 
 **To understand more about the ML Business Case, visit the [Detector's Wiki](https://github.com/Edgarkimbugwe/CLMP-Detector/wiki)**
@@ -206,7 +208,7 @@ The **Cherry Leaf Powdery Mildew Detection Dashboard** provides users with an in
 4. **Powdery Mildew Detector**  
    This is the key functionality where users can upload images of cherry leaves and receive real-time predictions about whether the leaves are infected or healthy. Multiple images can be uploaded at once, and a report with the results can be downloaded, making it easy for client to monitor the health of their plants quickly and efficiently.  
    **Addresses Business Requirement:**  
-   - *User-Friendly Dashboard for Prediction*  
+   - *User-Friendly Dashboard for Prediction* 
    - *Accurate Detection of Powdery Mildew on Cherry Leaves*
 
 5. **Project Hypothesis**  
@@ -261,31 +263,47 @@ The project is coded and hosted on GitHub and deployed with [Heroku](https://www
 The steps needed to deploy this projects are as follows:
 
 1. Create a `requirement.txt` file in GitHub, for Heroku to read, listing the dependencies the program needs in order to run.
+
 2. Set the `runtime.txt` Python version to a Heroku-20 stack currently supported version.
+
 3. `push` the recent changes to GitHub and go to your [Heroku account page](https://id.heroku.com/login) to create and deploy the app running the project. 
+
 3. Chose "CREATE NEW APP", give it a unique name, and select a geographical region. 
+
 4. Add  `heroku/python` buildpack from the _Settings_ tab.
+
 5. From the _Deploy_ tab, chose GitHub as deployment method, connect to GitHub and select the project's repository. 
+
 6. Select the branch you want to deploy, then click Deploy Branch.
+
 7. Click to "Enable Automatic Deploys " or chose to "Deploy Branch" from the _Manual Deploy_ section. 
+
 8. Wait for the logs to run while the dependencies are installed and the app is being built.
+
 9. The mock terminal is then ready and accessible from a link similar to `https://your-projects-name.herokuapp.com/`
+
 10. If the slug size is too large then add large files not required for the app to the `.slugignore` file.
    
 ### Forking the Repository
 
 - Below are the steps to fork the repository:
     - Locate the [GitHub Repository](https://github.com/Edgarkimbugwe/CLMP-Detector) of this project and log into your GitHub account. 
+
     - Click on the "Fork" button, on the top right of the page, just above the "Settings". 
+
     - Then locate 'Create Fork' below the page and click on it. 
+
     - You now have a copy of the original repository in your GitHub account.
 
 ### Making a local clone
 
 - Below are the steps to clone a repository:
     - On the page for the [repository](https://github.com/Edgarkimbugwe/CLMP-Detector), click the 'Code' button
+
     - To clone the repository using HTTPS, copy the HTTPS URL provided there
+
     - Open your CLI application of choice and change the current working directory to the location where you want the cloned directory to be made.
+
     - Type git clone, and then paste the previously copied URL to create the clone
 
 [Back to top ⇧](#table-of-contents)
@@ -294,25 +312,39 @@ The steps needed to deploy this projects are as follows:
 
 ### Main Data Analysis and Machine Learning Libraries
 - [NumPy](https://numpy.org/): Essential for numerical computing and image processing; converts images into arrays for manipulation.
+
 - [Pandas](https://pandas.pydata.org/): Facilitates data manipulation with DataFrames, making it easier to handle and analyze structured data.
+
 - [Matplotlib](https://matplotlib.org/): Enables plotting and visualization of image and tabular data, helping to analyze model performance.
+
 - [Seaborn](https://seaborn.pydata.org/): Enhances data visualization with attractive statistical graphics, used for confusion matrix heatmaps and scatter plots.
+
 - [Plotly](https://plotly.com/python/): Allows for interactive data visualization; used in the dashboard for dynamic charts.
+
 - [TensorFlow](https://www.tensorflow.org/versions/r2.6/api_docs/python/tf): A powerful machine learning library for building and training the model.
+
 - [Keras Tuner](https://keras.io/keras_tuner/): Assists in hyperparameter tuning to optimize model performance.
+
 - [Scikit-learn](https://scikit-learn.org/): Provides tools for calculating class weights and generating classification reports to assess model performance.
+
 - [PIL Image](https://pillow.readthedocs.io/en/stable/reference/Image.html): Used for various image manipulation tasks.
+
 - [Streamlit](https://streamlit.io/): Creation of the dashboard
 
 ### Platforms
 - [Heroku](https://en.wikipedia.org/wiki/Heroku): A cloud platform that enables easy deployment and scaling of web applications, including the project dashboard.
+
 - [Jupiter Notebook](https://jupyter.org/): An interactive coding environment that allows for the creation of documents containing live code, equations, visualizations, and narrative text, often used for data analysis
+
 - [Kaggle](https://www.kaggle.com/): A platform for data science and machine learning where datasets can be found, shared, and analyzed; it also provides a collaborative environment for model development.
+
 - [GitHub](https://github.com/): A version control repository that hosts source code, facilitates collaboration, and tracks changes, ensuring code management and backup.
+
 - [Gitpod](https://www.gitpod.io/): An online IDE that provides a pre-configured development environment in the cloud, enabling seamless coding directly from a browser.
 
 ### Languages
 - [Python](https://www.python.org/)
+
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
 [Back to top ⇧](#table-of-contents)
