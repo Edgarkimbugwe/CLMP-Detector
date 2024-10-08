@@ -370,9 +370,9 @@ In addressing the **line Length: 'line too long'** errors, it was observed that 
 
 ## Credits
 
-- The template used for this project belongs to CodeInstitute - [GitHub](https://github.com/Code-Institute-Submissions)
+- The template used for this project belongs to CodeInstitute (CI) - [GitHub](https://github.com/Code-Institute-Submissions)
 
-- CI's Malaria Detection walkthrough
+- CI's Malaria Detection walkthrough - Used as a guideline for working with the CLPM project
 
 - Edureka - [Cancer Detection Using Deep Learning](https://www.youtube.com/watch?v=7MceDfpnP8k&list=PL9ooVrP1hQOFx3U6DNqm-IwbWARdw2iEB&ab_channel=edureka%21)
 
