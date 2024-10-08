@@ -371,13 +371,22 @@ In addressing the **line Length: 'line too long'** errors, it was observed that 
 ## Credits
 
 - The template used for this project belongs to CodeInstitute - [GitHub](https://github.com/Code-Institute-Submissions)
+
 - CI's Malaria Detection walkthrough
+
 - Edureka - [Cancer Detection Using Deep Learning](https://www.youtube.com/watch?v=7MceDfpnP8k&list=PL9ooVrP1hQOFx3U6DNqm-IwbWARdw2iEB&ab_channel=edureka%21)
+
+- CodersArts - [Brain Tumor Detection Using Deep Learning](https://www.youtube.com/watch?v=juJYmc4vrWU&ab_channel=CodersArts)
+
 - Scikit-learn - [Understanding Learning Curves](https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html) 
 
 ### Content
-- The leaves dataset was linked from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) and created by [Code Institute](https://www.kaggle.com/codeinstitute)
-- The following sources were used to understand powdery mildew, [Powdery Mildews – 2.902, by by S. Newman and L.P. Pottorff](https://extension.colostate.edu/topic-areas/yard-garden/powdery-mildews-2-902/#:~:text=Powdery%20mildew%20is%20one%20of,or%20tolerant%20to%20powdery%20mildew.) and [garden design](https://www.gardendesign.com/how-to/powdery-mildew.html)
+- The leaves dataset which is created by [Code Institute](https://www.kaggle.com/codeinstitute) was linked from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
+
+- The following sources were used to understand powdery mildew:
+    - [Powdery Mildews – 2.902, by by S. Newman and L.P. Pottorff](https://extension.colostate.edu/topic-areas/yard-garden/powdery-mildews-2-902/#:~:text=Powdery%20mildew%20is%20one%20of,or%20tolerant%20to%20powdery%20mildew.)
+
+    - [garden design](https://www.gardendesign.com/how-to/powdery-mildew.html)
 
 ### Media
 - The banner was developed using Ms Word tools
