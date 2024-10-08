@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The Cherry Leaf Powdery Mildew Detector is an innovative machine learning solution project, the 5th and final Project of the Code Institute's Bootcamp in Full Stack Software Development with specialization in Predictive Analytics. The aim of the detector is to assist Farmy & Foods in the early detection of powdery mildew on cherry leaves. Powdery mildew is a fungal disease that can severely affect crop yield and quality, making timely intervention crucial for minimizing damage. This project utilizes Convolutional Neural Networks (CNNs) to analyze images of cherry leaves and accurately classify them as either healthy or infected.
+The Cherry Leaf Powdery Mildew Detector is an innovative machine learning solution project, the 5th and final Project of the Code Institute's Bootcamp in Full Stack Software Development with specialization in Predictive Analytics. The aim of the detector is to assist Farmy & Foods (client in agricultural sector) in the early detection of powdery mildew on cherry leaves. Powdery mildew is a fungal disease that can severely affect crop yield and quality, making timely intervention crucial for minimizing damage. This project utilizes Convolutional Neural Networks (CNNs) to analyze images of cherry leaves and accurately classify them as either healthy or infected.
 
 With an emphasis on achieving high accuracy (targeting at least 97%), the model is integrated into a user-friendly dashboard that allows users to upload images and receive real-time predictions. The solution aims to make advanced image classification technology accessible to users in agriculture, ensuring proactive crop management and disease control. Furthermore, the project is designed with scalability in mind, allowing future adaptations for other plant diseases or crops.
 
@@ -60,7 +60,7 @@ Before using the images for model training, the following preprocessing steps we
 
 ## Business Requirements
 
-On conducting an [interview with Marianne McGuineys](https://github.com/Edgarkimbugwe/CLMP-Detector/wiki/Business-understanding-interview) the head of IT and Innovation at Farmy & Foods, the primary business requirement for this project was to build a robust system for early detection of powdery mildew on cherry leaves. The system must accurately differentiate between healthy and infected leaves, enabling farmers and agriculturalists to take timely actions to protect crops. To ensure reliability in real-world applications, the model must achieve a target accuracy of at least 97%, which is critical for minimizing false positives and negatives.
+On conducting an [interview with Marianne McGuineys](https://github.com/Edgarkimbugwe/CLMP-Detector/wiki/Business-understanding-interview) the head of IT and Innovation at Farmy & Foods, the primary business requirement for this project was to build a robust system for early detection of powdery mildew on cherry leaves. The system must accurately differentiate between healthy and infected leaves, enabling Farmy & Foods to take timely actions to protect crops. To ensure reliability in real-world applications, the model must achieve a target accuracy of at least 97%, which is critical for minimizing false positives and negatives.
 
 Additionally, the system should be integrated into a user-friendly dashboard where users, with little to no technical background, can easily upload images and receive real-time predictions. The solution must be scalable to handle other crops or plant diseases in the future, and the platform must be web-based to allow access across various devices, including mobile and desktop platforms, with minimal maintenance or technical intervention required.
 
@@ -161,13 +161,13 @@ The rationale for developing the model centers on the pressing need for accurate
 
 4. **Model Output:** The output of the model will be a binary flag indicating whether the cherry leaf is healthy or infected, along with the probability score for each prediction. This output will be easily accessible through a user-friendly dashboard, allowing users to upload leaf images and instantly receive diagnostic results.
 
-5. **Current Detection Heuristics:** Traditionally, farmers visually inspect cherry trees to detect signs of powdery mildew. This process can take up to 30 minutes per tree, and human error can lead to inaccurate diagnoses. By using image-based detection, the proposed solution improves speed, consistency, and accuracy over manual inspection.
+5. **Current Detection Heuristics:** Traditionally, an employee visually inspect cherry trees to detect signs of powdery mildew. This process can take up to 30 minutes per tree, and human error can lead to inaccurate diagnoses. By using image-based detection, the proposed solution improves speed, consistency, and accuracy over manual inspection.
 
 6. **Training Data:** The training data comes from a dataset of cherry leaf images uploaded to Kaggle, which includes 4,208 labeled images (healthy or infected). The dataset is crucial for training and validating the model.
 
 7. **Business Benefits:**
 
-    - **Efficiency:** The model will save farmers significant time compared to manual inspection processes.
+    - **Efficiency:** The model will save Farmy & Foods significant time compared to manual inspection processes.
 
     - **Reliability:** The model reduces human error in detecting powdery mildew, leading to more consistent outcomes and better decision-making.
 
